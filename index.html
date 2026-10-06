@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX Designer Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">Dinithi Adithya<span>.</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact" class="btn-nav">Let's Talk</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="badge">UI/UX Design Intern</span>
+                <h1>Crafting Intuitive & Engaging Digital Experiences</h1>
+                <p>Hi, I'm Dinithi an aspiring UI/UX Designer passionate about transforming complex problems into clean, user-centric, and aesthetically pleasing interfaces.</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-outline">Get in Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                
+             <div class="img-box">
+                    <img src="assets/dinithi.jpg" alt="Dinithi Photo" class="hero-profile-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>I am an HNDIT undergraduate at SLIATE with a strong foundation in modern web technologies and UI/UX design. By combining my technical knowledge in frontend development with design tools like Figma, I bridge the gap between aesthetics and functional code to create seamless digital products.</p>
+                    <p>My goal is to create seamless digital products that deliver real value to users while aligning with business objectives.</p>
+                </div>
+                <div class="highlights">
+                    <div class="highlight-card">
+                        <h3>Figma & Prototyping</h3>
+                        <p>Wireframing, interactive mockups, and design systems.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <h3>User Research</h3>
+                        <p>Understanding user behaviors, pain points, and journey mapping.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Tools & Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item"><i class="fa-brands fa-figma"><span>Figma</span></i></div>
+                <div class="skill-item"><i class="fa-solid fa-wand-magic-sparkles"><span>Adobe XD</span></i></div>
+                <div class="skill-item"><i class="fa-brands fa-html5"><span>HTML5 / CSS3</span></i></div>
+                <div class="skill-item"><i class="fa-brands fa-js"><span>JavaScript</span></i></div>
+                <div class="skill-item"><i class="fa-solid fa-mobile-screen"><span>Responsive Design</span></i></div>
+                <div class="skill-item"><i class="fa-solid fa-users"><span>User Testing</span></i></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section (UI/UX Focus) -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-img bg-1">
+                        <span>Mobile Banking App UI</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>Flex Mobile Banking</h3>
+                        <p>A user-centric mobile banking interface designed for smooth transactions and modern financial tracking.</p>
+                        <a href="#" class="project-link">View Case Study <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-img bg-2">
+                        <span>Dashboard Redesign</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>Blood Donor Management System</h3>
+                        <p>Streamlined dashboard UI/UX focused on fast navigation, donor coordination, and clean typography.</p>
+                        <a href="#" class="project-link">View Case Study <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container contact-container">
+            <h2>Let's Work Together</h2>
+            <p>Looking for a dedicated UI/UX Design Intern? Drop me a message!</p>
+            <form id="contactForm">
+                <div class="input-group">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="input-group">
+                    <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+            <div id="formMessage" class="hidden"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-flex">
+            <p>&copy; 2026 UI/UX Portfolio. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
