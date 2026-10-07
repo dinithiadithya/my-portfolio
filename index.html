@@ -154,22 +154,39 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+     
+                <section id="contact" class="contact">
         <div class="container contact-container">
             <h2>Let's Work Together</h2>
             <p>Looking for a dedicated UI/UX Design Intern? Drop me a message!</p>
-            <form id="contactForm">
+            
+            <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+                
+                <!-- Web3Forms Access Key -->
+                <input type="hidden" name="access_key" value="6d8f3f85-c5ea-47ca-be41-d20b198d8910">
+
+                <!-- 1. Subject එක වෙනස් කර ගැනීමට (Optional) -->
+                <input type="hidden" name="subject" value="New Portfolio Message from Contact Form">
+
+                <!-- 2. Sender (පණිවිඩය එවන්නා) ට Auto-reply එකක් යැවීමට -->
+                <input type="hidden" name="replyto" value="true">
+
                 <div class="input-group">
-                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="text" name="name" id="name" placeholder="Your Name" required>
                 </div>
                 <div class="input-group">
-                    <input type="email" id="email" placeholder="Your Email" required>
+                    <input type="email" name="email" id="email" placeholder="Your Email" required>
                 </div>
                 <div class="input-group">
-                    <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                    <textarea name="message" id="message" rows="5" placeholder="Your Message" required></textarea>
                 </div>
+                
+                <!-- Honeypot Spam Protection -->
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
                 <button type="submit" class="btn btn-primary">Send Message</button>
             </form>
+            
             <div id="formMessage" class="hidden"></div>
         </div>
     </section>
