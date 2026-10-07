@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UI/UX Designer Portfolio</title>
+    <title>Dinithi Adithya - UI/UX Designer Portfolio</title>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Font Awesome Icons -->
@@ -22,14 +22,14 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact" class="btn-nav">Let's Talk</a></li>
+                    <li><a href="#contact" class="btn-nav">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section -->
-      <section class="hero">
+    <!-- Hero Section with Orbiting Animated Icons -->
+    <section class="hero">
         <div class="container hero-container">
             <div class="hero-content">
                 <span class="badge">UI/UX Design Intern</span>
@@ -40,10 +40,16 @@
                     <a href="#contact" class="btn btn-outline">Get in Touch</a>
                 </div>
             </div>
-            <div class="hero-image">
+            
+            <!-- Hero Image with Orbiting Icons -->
+            <div class="hero-image-wrapper">
                 <div class="img-circle">
                     <img src="assets/dinithi.jpg" alt="Dinithi Photo" class="hero-profile-img">
                 </div>
+                <!-- Orbiting Animated Icons -->
+                <div class="orbit-icon icon-1"><i class="fa-solid fa-brain"></i></div>
+                <div class="orbit-icon icon-2"><i class="fa-brands fa-figma"></i></div>
+                <div class="orbit-icon icon-3"><i class="fa-solid fa-code"></i></div>
             </div>
         </div>
     </section>
@@ -122,12 +128,11 @@
         </div>
     </section>
 
-    <!-- Projects Section (UI/UX Focus) -->
+    <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
             <h2>Featured Projects</h2>
             <div class="project-grid">
-                <!-- Project 1 -->
                 <div class="project-card">
                     <div class="project-img bg-1">
                         <span>Mobile Banking App UI</span>
@@ -138,7 +143,6 @@
                         <a href="#" class="project-link">View Case Study <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
-                <!-- Project 2 -->
                 <div class="project-card">
                     <div class="project-img bg-2">
                         <span>Dashboard Redesign</span>
@@ -153,47 +157,59 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact Section with New Card Layout & Form -->
     <section id="contact" class="contact">
-        <div class="container contact-container">
+        <div class="container">
             <h2>Let's Work Together</h2>
-            <p>Looking for a dedicated UI/UX Design Intern? Drop me a message!</p>
-            
-            <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
-                
-                <!-- Web3Forms Access Key -->
-                <input type="hidden" name="access_key" value="6d8f3f85-c5ea-47ca-be41-d20b198d8910">
-
-                <!-- Email Subject -->
-                <input type="hidden" name="subject" value="New Portfolio Message from Contact Form">
-
-                <!-- Makes incoming email reply-able directly to the sender -->
-                <input type="hidden" name="replyto" value="true">
-
-                <div class="input-group">
-                    <input type="text" name="name" id="name" placeholder="Your Name" required>
+            <div class="contact-wrapper">
+                <!-- Left Side: Contact Information Card -->
+                <div class="contact-info-card">
+                    <div class="contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Anuradhapura, Sri Lanka</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>adithyadinithi79@gmail.com</span>
+                    </div>
+                    <div class="contact-socials">
+                        <a href="https://linkedin.com" target="_blank" class="social-btn"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                        <a href="https://github.com" target="_blank" class="social-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+                    </div>
                 </div>
-                <div class="input-group">
-                    <input type="email" name="email" id="email" placeholder="Your Email" required>
-                </div>
-                <div class="input-group">
-                    <textarea name="message" id="message" rows="5" placeholder="Your Message" required></textarea>
-                </div>
-                
-                <!-- Honeypot Spam Protection -->
-                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
-                <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
-            
-            <div id="formMessage" class="hidden"></div>
+                <!-- Right Side: Contact Form -->
+                <div class="contact-form-container">
+                    <p>Looking for a dedicated UI/UX Design Intern? Drop me a message!</p>
+                    <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+                        <input type="hidden" name="access_key" value="6d8f3f85-c5ea-47ca-be41-d20b198d8910">
+                        <input type="hidden" name="subject" value="New Portfolio Message from Contact Form">
+                        <input type="hidden" name="replyto" value="true">
+
+                        <div class="input-group">
+                            <input type="text" name="name" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" name="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="input-group">
+                            <textarea name="message" id="message" rows="4" placeholder="Your Message" required></textarea>
+                        </div>
+                        
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                    <div id="formMessage" class="hidden"></div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
         <div class="container footer-flex">
-            <p>&copy; 2026 UI/UX Portfolio. All rights reserved.</p>
+            <p>&copy; 2026 Dinithi Adithya. All rights reserved.</p>
             <div class="social-icons">
                 <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="#"><i class="fa-brands fa-github"></i></a>
